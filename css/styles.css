@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: lightgrey;
+    color: darkolivegreen;
+    text-align: center;
+    height:35px;
+    display: flex;
+    padding-top: 5px;
+}
+
+.header p {
+    position: relative;
+    display: inline;
+    left: 0;
+}
+
+.hbuttons, 
+.hbuttons2 {
+    position: relative;
+    display: inline;
+    right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hbuttons button,
+.hbuttons2 button {
+    border-radius: 0;
+    height: 20px;
+}
+
+.hbuttons button::before {
+    position: relative;
+    top: -4px;
+    left:-7px;
+    border: 10px solid red;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    content: '';
+    font-size: 0;
+}
+
+.hbuttons button::after {
+    position: relative;
+    top: -4px;
+    left:7px;
+    border: 10px solid red;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    content: '';
+    font-size: 0;
+}
+
+.hbuttons2 button::before {
+    position: relative;
+    top: -4px;
+    left:-27px;
+    border: 10px solid red;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    content: '';
+    font-size: 0;
+}
+
+.hbuttons2 button::after {
+    position: relative;
+    top: -4px;
+    left:26px;
+    border: 10px solid red;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    content: '';
+    font-size: 0;
+}
+
+.hbuttons2 button{
+    margin-left: 20px;
+}
+
+.mhidden {
+    visibility: hidden;
+}
+
+.mvisible {
+    visibility: visible;
+}
+
+
+.content{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+button {
+    min-width: 80px;
+    border-radius: 10px;
+    border: 1px solid salmon;
+}
+
+.botoes {
+    padding: 50px;
+}
+
+
+
+#aviso {
+    width: 90%;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+#aviso p {
+    padding: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgrey;
+    color: darkolivegreen;
+    text-align: center;
+    height:40px;
+}

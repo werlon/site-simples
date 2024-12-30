@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site exemplo simples</title>
+    <script src="js/scripts.js"></script>
+    <script>
+        function showCopy(){
+            let ano = new Date().getFullYear()
+            document.getElementById("myCopy").innerHTML = ano
+            eventos()
+        }
+    </script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="showCopy()">
+    <div class="header">
+        <p>Site Exemplo Simples</p>
+        <div class="hbuttons">
+            <button type="button">Botão 1</button>
+            <button type="button">Botão 2</button>
+        </div>
+        <div class="hbuttons2">
+            <button type="button">Botão 3</button>
+            <button type="button">Botão 4</button>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Você vai ficar rico usando só html e css?</h1>
+        <div class="botoes">
+            <button id="botaoSim" class="mvisible">Sim</button>
+            <button id="botaoSim2" class="mhidden">Sim</button>
+            <button id="botaoNao">Não</button>
+        </div>
+        <div id="aviso"></div>
+    </div>
+    <div class="footer">
+        <div class="copy">&copy; Werlon<sup>&#174;</sup> <span id="myCopy"></span></div>
+    </div>
+    
+</body>
+
+</html>
